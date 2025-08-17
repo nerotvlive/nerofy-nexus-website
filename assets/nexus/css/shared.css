@@ -1,0 +1,53 @@
+* {
+    font-family: "Google Sans Code", monospace;
+}
+
+body {
+    #menu {
+        z-index: 999999;
+        position: fixed;
+        left: 0; top: 0; right: 0;
+        background: linear-gradient(#ffffff05,#ffffff10);
+        backdrop-filter: blur(8px);
+        user-select: none;
+        display: flex;
+        padding: 0.5rem;
+        border-bottom: 1px solid var(--bs-border-color-translucent);
+
+        .menu-title {
+            width: fit-content;
+            img {
+                height: 3rem;
+                width: 3rem;
+                margin: 0 0 0 0.5rem;
+            }
+
+            h4 {
+                width: 12rem;
+                height: 3rem;
+                display: flex;
+                align-items: center;
+                margin: 0 0 0 1rem;
+                text-shadow: 0 0 0.3rem black;
+            }
+        }
+
+        .menu-navigation {
+            display: none !important;
+            width: 100%;
+            justify-content: right;
+
+            button {
+                margin: 0.25rem;
+            }
+
+            .btn:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
+    #footer-en {
+        top: 100vh;
+    }
+}
