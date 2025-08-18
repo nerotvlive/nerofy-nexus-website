@@ -1,4 +1,29 @@
 body {
-    background: #060809 radial-gradient(#1b1e22 1px, transparent 0) -19px -19px;
+    background-color: #060809;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: -19px;
+    width: calc(100% + 48px);
+    height: calc(100% + 48px);
+    z-index: -1;
+    background: radial-gradient(#1b1e22 1px, transparent 0);
     background-size: 48px 48px;
+    animation: move-background 16s linear infinite;
+}
+
+@keyframes move-background {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-48px, -48px);
+    }
 }
