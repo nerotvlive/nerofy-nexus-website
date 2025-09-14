@@ -1,3 +1,3 @@
-# Zyneon NEXUS (Nerofy Network ver.) Website
+# Zyneon NEXUS Website
 
 wip
