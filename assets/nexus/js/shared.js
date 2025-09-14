@@ -3,6 +3,10 @@ if(window.location.hostname.toLowerCase() === "nexus.nrfy.net") {
     window.location.href = window.location.href.replace("nexus.nrfy.net", "nexus.zyneon.de");
 }
 
+if(window.location.href.includes("zyneon.de")) {
+    window.location.href=window.location.href.replaceAll("zyneon.de","zyneon.net");
+}
+
 function initMenu() {
     if(document.getElementById("menu")) {
         const menu = document.getElementById("menu");
